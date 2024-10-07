@@ -52,5 +52,6 @@ app.use('/dashboard', require('./routes/dashboard.routes'))
 // API Routes
 app.use('/api/user', require('./routes/user.routes'))
 app.use('/api/guild', require('./routes/guild.routes'))
+app.use('/api/image', require('./routes/image.routes'))
 
 module.exports = app
