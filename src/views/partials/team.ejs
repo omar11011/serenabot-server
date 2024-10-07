@@ -1,0 +1,21 @@
+<div class="container mt-3 pt-3 pb-3">
+    <div class="d-flex flex-column text-center mb-5">
+        <h4 class="text-secondary mb-2">STAFF</h4>
+        <h1 class="display-4 m-0">Conoce a nuestro <span class="text-primary">Equipo</span></h1>
+    </div>
+    <div class="row d-flex justify-content-around">
+        <% admins.map(admin => { %>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="/upload/profiles/<%= admin.discordId %>.jpg">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5><%= admin.username %></h5>
+                            <i><%= admin.role %></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>

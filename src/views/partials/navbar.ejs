@@ -1,0 +1,29 @@
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Serena</span>Bot</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="/" class="nav-item nav-link <%= navbar === 'home' ? 'active' : '' %>">Inicio</a>
+                <a href="/staff" class="nav-item nav-link <%= navbar === 'staff' ? 'active' : '' %>">Equipo</a>
+                <a href="/commands" class="nav-item nav-link <%= navbar === 'commands' ? 'active' : '' %>">Comandos</a>
+                <a href="/store" class="nav-item nav-link <%= navbar === 'store' ? 'active' : '' %>">Tienda</a>
+                <% if (user) { %>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mi cuenta</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="/auth/logout" class="dropdown-item">Cerrar sesión</a>
+                        </div>
+                    </div>
+                <% } %>
+                <% if (!user) { %>
+                    <a href="/auth" class="nav-item nav-link">Ingresar</a>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,17 @@
+body {
+    background: url('/img/bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.bg-login {
+    background-color: #e93a3b !important;
+    border-color: #e93a3b !important;
+}
+
+.text-login {
+    color: #e93a3b;
+}
+
+.text-login:hover {
+    color: #e93a3b;
+}
