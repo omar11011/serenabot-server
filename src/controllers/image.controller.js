@@ -11,7 +11,10 @@ const randomImage = async (folder, subfolder) => {
             
             let file = files[Math.floor(Math.random() * files.length)]
             
-            resolve(process.env.SITE_URL + imgFolder + file)
+            resolve({
+                file,
+                url: process.env.SITE_URL + imgFolder + file,
+            })
         })
     })
 }
@@ -21,7 +24,7 @@ module.exports = async (req, res) => {
 
     if (!folder) return res.json({ error: 'No especificaste el directorio' })
 
-    let url = await randomImage(folder, subfolder)
+    let file = await randomImage(folder, subfolder)
 
-    return res.json({ url })
+    return res.json(file)
 }
