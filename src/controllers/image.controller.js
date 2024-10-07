@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const randomImage = async (folder, subfolder) => {
-    let imgFolder = `upload/${folder}/${subfolder ? subfolder + '/' : ''}`
+    let imgFolder = `upload/${folder}${subfolder ? '/' + subfolder : ''}`
     let rootFolder = path.join(__dirname, '../public', imgFolder)
 
     return new Promise((resolve, reject) => {
@@ -13,7 +13,7 @@ const randomImage = async (folder, subfolder) => {
             
             resolve({
                 file,
-                url: process.env.SITE_URL + imgFolder + file,
+                url: `${process.env.SITE_URL}/${imgFolder}/${file}`,
             })
         })
     })

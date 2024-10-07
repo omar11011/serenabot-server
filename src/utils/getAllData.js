@@ -14,8 +14,8 @@ module.exports = async (req, res, props) => {
     
         const response = {
             count,
-            next: (skip + limit < count) ? `${process.env.SITE_URL}api/${route}?page=${page + 1}&limit=${limit}` : null,
-            previous: (page > 1) ? `${process.env.SITE_URL}api/${route}?page=${page - 1}&limit=${limit}` : null,
+            next: (skip + limit < count) ? `${process.env.SITE_URL}/api/${route}?page=${page + 1}&limit=${limit}` : null,
+            previous: (page > 1) ? `${process.env.SITE_URL}/api/${route}?page=${page - 1}&limit=${limit}` : null,
             results,
         }
     
