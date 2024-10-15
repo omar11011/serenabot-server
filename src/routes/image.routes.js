@@ -2,8 +2,9 @@ const { Router } = require('express')
 
 const router = Router()
 
-const randomImage = require('../controllers/image.controller')
+const { random, searched } = require('../controllers/image.controller')
 
-router.get('/random', randomImage)
+router.get('/', searched)
+router.get('/random', random)
 
 module.exports = router
