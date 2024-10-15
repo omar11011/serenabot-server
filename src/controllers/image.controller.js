@@ -13,7 +13,7 @@ const randomImage = async (folder, subfolder) => {
             
             resolve({
                 file,
-                url: `${process.env.SITE_URL}/${imgFolder}/${file}`,
+                url: `${process.env.SITE_URL}/${imgFolder}/${file.replace(' ', '%20')}`,
             })
         })
     })
@@ -27,10 +27,10 @@ const searchedImage = async (folder, image) => {
             if (err) return resolve({ url: null })
             
             let file = files.filter(e => image.toLowerCase().replace('.', '') === e.split('.').slice(0, -1).join(' ').toLowerCase())
-            
+            console.log(file)
             resolve({
                 file: file.length > 0 ? file[0] : null,
-                url: `${process.env.SITE_URL}/upload/${folder}/${file}`,
+                url: `${process.env.SITE_URL}/upload/${folder}/${file[0].replace(' ', '%20')}`,
             })
         })
     })
