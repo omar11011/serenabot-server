@@ -21,16 +21,17 @@ const randomImage = async (folder, subfolder) => {
 
 const searchedImage = async (folder, image) => {
     let rootFolder = path.join(__dirname, '../public/upload', folder)
-
+    
     return new Promise((resolve, reject) => {
         fs.readdir(rootFolder, (err, files) => {
             if (err) return resolve({ url: null })
             
-            let file = files.filter(e => image.toLowerCase().replace('.', '') === e.split('.').slice(0, -1).join(' ').toLowerCase())
-            console.log(file)
+            let file = files.find(e => image.toLowerCase().replace('.', '') === e.split('.').slice(0, -1).join(' ').toLowerCase())
+            
+            if (!file) return resolve({ url: null })
             resolve({
-                file: file.length > 0 ? file[0] : null,
-                url: `${process.env.SITE_URL}/upload/${folder}/${file[0].replace(' ', '%20')}`,
+                file: file || null,
+                url: `${process.env.SITE_URL}/upload/${folder}/${file.replace(' ', '%20')}`,
             })
         })
     })
