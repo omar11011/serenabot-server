@@ -5,6 +5,10 @@ const guildSchema = new Schema({
         type: String,
         required: true,
     },
+    isVip: {
+        type: Boolean,
+        default: false,
+    },
     prefix: {
         type: String,
         default: 's!',
@@ -15,6 +19,10 @@ const guildSchema = new Schema({
             xp: 0,
             level: 1,
         },
+    },
+    spawnChannels: {
+        type: [ String ],
+        default: null,
     },
 }, {
     timestamps: true,

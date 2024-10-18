@@ -5,6 +5,10 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
+    isVip: {
+        type: Boolean,
+        default: false,
+    },
     username: {
         type: String,
         default: null,
