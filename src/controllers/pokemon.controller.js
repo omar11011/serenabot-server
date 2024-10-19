@@ -1,5 +1,10 @@
 const Pokemon = require('../models/Pokemon')
 
+const getPokemon = async (req, res) => {
+    const pokemon = await Pokemon.findById(req.params.id).lean()
+    return res.json(pokemon)
+}
+
 const getCaptures = async (req, res) => {
     let params = req.params
     let query = req.query
@@ -118,6 +123,7 @@ const updatePokemon = async (req, res) => {
 }
 
 module.exports = {
+    getPokemon,
     getCaptures,
     createPokemon,
     updatePokemon,
