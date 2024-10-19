@@ -2,17 +2,17 @@ module.exports = async (req, res, props) => {
     const { model, route } = props
 
     try {
-        const page = parseInt(req.query.page) || 1
-        const limit = parseInt(req.query.limit) || 100
+        let page = parseInt(req.query.page) || 1
+        let limit = parseInt(req.query.limit) || 20
     
         if (page < 1) page = 1
-        if (limit < 1) limit = 100
+        if (limit < 1) limit = 20
     
-        const skip = (page - 1) * limit
-        const count = await model.countDocuments()
-        const results = await model.find({}).skip(skip).limit(limit).lean()
+        let skip = (page - 1) * limit
+        let count = await model.countDocuments()
+        let results = await model.find({}).skip(skip).limit(limit).lean()
     
-        const response = {
+        let response = {
             count,
             next: (skip + limit < count) ? `${process.env.SITE_URL}/api/${route}?page=${page + 1}&limit=${limit}` : null,
             previous: (page > 1) ? `${process.env.SITE_URL}/api/${route}?page=${page - 1}&limit=${limit}` : null,

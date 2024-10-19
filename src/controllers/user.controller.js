@@ -1,6 +1,11 @@
 const User = require('../models/User')
 const getAllData = require('../utils/getAllData')
 
+const getUser = async (req, res) => {
+    const user = await User.findOne({ userId: req.params.id }).lean()
+    return res.json(user)
+}
+
 const getUsers = async (req, res) => {
     await getAllData(req, res, {
         model: User,
@@ -34,6 +39,7 @@ const updateUser = async (req, res) => {
 };
 
 module.exports = {
+    getUser,
     getUsers,
     createUser,
     updateUser,

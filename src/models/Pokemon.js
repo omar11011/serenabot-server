@@ -18,6 +18,7 @@ const pokemonSchema = new Schema({
         xp: { type: Number, default: 0 },
         level: { type: Number, default: 1 },
         friendship: { type: Number, default: 0 },
+        iv: { type: Number, default: 0 },
     },
     features: {
         isShiny: { type: Boolean, default: false },
