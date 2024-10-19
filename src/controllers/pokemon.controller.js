@@ -102,11 +102,11 @@ const createPokemon = async (req, res) => {
 }
 
 const updatePokemon = async (req, res) => {
-    let { id, set = {}, inc = {} } = req.body
-    if (!id) return res.status(400).json({ error: 'No se especificó el Pokémon' })
+    let { _id, set = {}, inc = {} } = req.body
+    if (!_id) return res.status(400).json({ error: 'No se especificó el Pokémon' })
 
     let pokemonWanted = await Pokemon.findOneAndUpdate(
-        { _id: id },
+        { _id },
         { 
             $set: set, 
             $inc: inc 
