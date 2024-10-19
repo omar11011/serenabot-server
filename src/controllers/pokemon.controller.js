@@ -10,7 +10,7 @@ const getCaptures = async (req, res) => {
     let baseURL = `${process.env.SITE_URL}/api/pokemon/captures/${params.user}?`
     let newQueries = []
 
-    if (query.name) {
+    if (query.name && query.name.length > 2) {
         let normalizedSearch = query.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         obj.$or.push({
             pokemon: { $regex: new RegExp(normalizedSearch, 'i') },
@@ -101,7 +101,24 @@ const createPokemon = async (req, res) => {
     return res.json(pokemon)
 }
 
+const updatePokemon = async (req, res) => {
+    let { id, set = {}, inc = {} } = req.body
+    if (!id) return res.status(400).json({ error: 'No se especificó el Pokémon' })
+
+    let pokemonWanted = await Pokemon.findOneAndUpdate(
+        { _id: id },
+        { 
+            $set: set, 
+            $inc: inc 
+        },
+        { new: true, upsert: true }
+    )
+
+    return res.json(pokemonWanted)
+}
+
 module.exports = {
     getCaptures,
     createPokemon,
+    updatePokemon,
 }

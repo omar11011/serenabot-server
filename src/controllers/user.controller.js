@@ -36,7 +36,7 @@ const updateUser = async (req, res) => {
     )
 
     return res.json(userWanted)
-};
+}
 
 module.exports = {
     getUser,
