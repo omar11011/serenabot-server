@@ -19,18 +19,25 @@ passport.use(new Strategy({
 }, async (acessToken, refreshToken, profile, done) => {
     try {
         const user = await User.findOne({ userId: profile.id })
+        const discordData = {
+            id: profile.id,
+            username: profile.username,
+            globalName: profile.globalName,
+            discriminator: profile.discriminator,
+            avatar: profile.avatar,
+            email: profile.email,
+            verified: profile.verified,
+        }
+
         if (user) {
-            user.email = profile.email
-            user.verified = profile.verified
+            user.discordData = discordData
             user.save()
             return done(null, user.userId)
         }
 
         const newUser = new User({
             userId: profile.id,
-            username: 'user' + Date.now(),
-            email: profile.email,
-            verified: profile.verified,
+            discordData: discordData,
         })
         await newUser.save()
         done(null, newUser.userId)

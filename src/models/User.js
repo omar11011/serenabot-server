@@ -5,32 +5,23 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-    isVip: {
-        type: Boolean,
-        default: false,
-    },
-    username: {
-        type: String,
-        default: null,
-    },
-    email: {
-        type: String,
-        default: null,
-    },
-    verified: {
-        type: Boolean,
-        default: false,
-    },
-    role: {
-        type: String,
-        default: 'trainer',
+    discordData: {
+        id: { type: String, default: null },
+        username: String,
+        globalName: String,
+        discriminator: String,
+        avatar: String,
+        email: String,
+        verified: { type: Boolean, default: false },
     },
     status: {
-        type: Schema.Types.Mixed,
-        default: {
-            xp: 0,
-            level: 1,
-        },
+        level: { type: Number, default: 1 },
+        xp: { type: Number, default: 0 },
+    },
+    features: {
+        isVip: { type: Boolean, default: false },
+        isAdmin: { type: Boolean, default: false },
+        isOwner: { type: Boolean, default: false },
     },
     balance: {
         type: Schema.Types.Mixed,
