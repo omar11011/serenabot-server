@@ -53,7 +53,7 @@ app.use('/dashboard', require('./routes/dashboard.routes'))
 app.use('/api/user', require('./routes/user.routes'))
 app.use('/api/guild', require('./routes/guild.routes'))
 app.use('/api/image', require('./routes/image.routes'))
-app.use('/api/pokemon', require('./routes/pokemon.routes'))
+app.use('/api/pokemon-capture', require('./routes/pokemon.routes'))
 
 app.use('/api/pokemon-habitat', require('./routes/pokemonHabitat'))
 

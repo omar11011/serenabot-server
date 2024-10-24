@@ -2,13 +2,16 @@ const PokemonNature = require('../models/PokemonNature')
 const PokemonEggGroup = require('../models/PokemonEggGroup')
 const PokemonGrowth = require('../models/PokemonGrowth')
 const PokemonHabitat = require('../models/PokemonHabitat')
+const PokemonRegion = require('../models/PokemonRegion')
 
-const pokemonNature = require('../data/pokemon-nature')
-const pokemonEggGroup = require('../data/pokemon-egg-group')
-const pokemonGrowth = require('../data/pokemon-growth')
-const pokemonHabitat = require('../data/pokemon-habitat')
+const pokemonNature = require('../data/PokemonNature')
+const pokemonEggGroup = require('../data/PokemonEggGroup')
+const pokemonGrowth = require('../data/PokemonGrowth')
+const pokemonHabitat = require('../data/PokemonHabitat')
+const pokemonRegion = require('../data/PokemonRegion')
 
 module.exports = async () => {
+    return
     // Naturaleza
     await PokemonNature.deleteMany({})
     await PokemonNature.insertMany(pokemonNature)
@@ -28,4 +31,9 @@ module.exports = async () => {
     await PokemonHabitat.deleteMany({})
     await PokemonHabitat.insertMany(pokemonHabitat)
     console.log('Habitats actualizados')
+
+    // Habitat
+    await PokemonRegion.deleteMany({})
+    await PokemonRegion.insertMany(pokemonRegion)
+    console.log('Regiones actualizadas')
 }

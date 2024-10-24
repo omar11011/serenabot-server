@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const pokemonSchema = new Schema({
+const pokemonCaptureSchema = new Schema({
     pokemon: {
         type: String,
         required: true,
@@ -63,4 +63,4 @@ const pokemonSchema = new Schema({
     timestamps: true
 })
 
-module.exports = model('Pokemon', pokemonSchema)
+module.exports = model('PokemonCapture', pokemonCaptureSchema)

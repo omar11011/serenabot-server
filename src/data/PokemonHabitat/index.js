@@ -1,3 +1,5 @@
+const Schema = require('./schema')
+
 module.exports = [
     {
         "name": "Pradera",
@@ -35,7 +37,4 @@ module.exports = [
         "name": "Raro",
         "description": "Todos los Pokémon son Pokémon legendarios (excepto Unown), por lo que son muy raramente vistos."
     }
-].map(e => {
-    e.image = `${process.env.SITE_URL}/upload/pokemon-habitat/${e.name}.gif`
-    return e
-})
+].map(e => new Schema(e))

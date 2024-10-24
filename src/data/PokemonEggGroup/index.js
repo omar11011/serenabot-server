@@ -1,3 +1,5 @@
+const Schema = require('./schema')
+
 module.exports = [
     "Desconocido",
     "Ditto",
@@ -14,8 +16,4 @@ module.exports = [
     "Monstruo",
     "Hada",
     "Dragon"
-].map(e => {
-    return {
-        name: e,
-    }
-})
+].map(e => new Schema(e))
