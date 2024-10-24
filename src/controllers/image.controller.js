@@ -47,10 +47,33 @@ const getImage = async (req, res) => {
     if (!folder || !image) return res.json({ error: 'No se especificó la carpeta o la imagen' })
 
     try {
-        const imageDoc = fs.readFileSync(path.join(__dirname, `../data/${folder}/${image}`))
-        if (!imageDoc) return res.status(404).json({ error: 'Imagen no encontrada' })
+        const imagePath = path.join(__dirname, `../data/${folder}/${image}`)
+        if (!fs.existsSync(imagePath)) return res.status(404).json({ error: 'Imagen no encontrada' })
     
-        res.set('Content-Type', 'image/png')
+        const imageDoc = fs.readFileSync(imagePath)
+        const ext = path.extname(image).toLowerCase();
+        let contentType;
+        switch (ext) {
+            case '.png':
+                contentType = 'image/png';
+                break;
+            case '.jpg':
+            case '.jpeg':
+                contentType = 'image/jpeg';
+                break;
+            case '.gif':
+                contentType = 'image/gif';
+                break;
+            case '.bmp':
+                contentType = 'image/bmp';
+                break;
+            case '.svg':
+                contentType = 'image/svg+xml';
+                break;
+            default:
+                return res.status(415).json({ error: 'Tipo de imagen no soportado' });
+        }
+        res.set('Content-Type', contentType)
         res.send(imageDoc)
     }
     catch (error) {
