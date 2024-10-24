@@ -2,7 +2,8 @@ const User = require('../models/User')
 const getAllData = require('../utils/getAllData')
 
 const getUser = async (req, res) => {
-    const user = await User.findOne({ userId: req.params.id }).lean()
+    const id = req.params.id
+    const user = await User.findOne({ userId: id }).lean()
     return res.json(user)
 }
 

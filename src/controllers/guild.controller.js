@@ -20,20 +20,17 @@ const createGuild = async (req, res) => {
 const updateGuild = async (req, res) => {
     let { guildId, set = {}, inc = {} } = req.body
     if (!guildId) return res.status(400).json({ error: 'No se especificó el servidor' })
+        
+    let guildWanted = await Guild.findOneAndUpdate(
+        { guildId },
+        { 
+            $set: set, 
+            $inc: inc 
+        },
+        { new: true, upsert: true }
+    )
 
-    let guildWanted = await Guild.findOne({ guildId })
-    if (!guildWanted) guildWanted = await Guild.create({ guildId, prefix: '!' })
-
-    Object.keys(set).forEach(key => {
-        guildWanted[key] = set[key]
-    })
-
-    Object.keys(inc).forEach((key) => {
-        if (typeof guildWanted[key] === 'number') guildWanted[key] += inc[key]
-    })
-
-    await guildWanted.save()
-    return res.json({ update: true })
+    return res.json(guildWanted)
 }
 
 module.exports = {

@@ -47,6 +47,18 @@ const pokemonSchema = new Schema({
         isSelected: { type: Boolean, default: false },
         isFavorite: { type: Boolean, default: false },
     },
+    movements: {
+        type: [
+            {
+                _id: false,
+                name: { type: String, default: null },
+                xp: { type: Number, default: 0 },
+                level: { type: Number, default: 1 },
+                type: { type: String, default: 'nivel' },
+            },
+        ],
+        default: [],
+    },
 }, {
     timestamps: true
 })
