@@ -47,7 +47,7 @@ const getImage = async (req, res) => {
     if (!folder || !image) return res.json({ error: 'No se especificó la carpeta o la imagen' })
 
     try {
-        const imagePath = path.join(__dirname, `../data/${folder}/${image}`)
+        const imagePath = path.join(__dirname, `../data/${folder}/images/${image}`)
         if (!fs.existsSync(imagePath)) return res.status(404).json({ error: 'Imagen no encontrada' })
     
         const imageDoc = fs.readFileSync(imagePath)
