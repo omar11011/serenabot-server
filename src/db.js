@@ -1,4 +1,5 @@
 const { set, connect } = require('mongoose')
+const loadData = require('./utils/loadData')
 
 module.exports = async () => {
     const MONGODB_USER = process.env.MONGODB_USER
@@ -12,6 +13,7 @@ module.exports = async () => {
         connect(URI, {})
         .then(async () => {
             console.log('Conexión exitosa a MongoDB')
+            await loadData()
         })
         .catch((error) => {
             console.error('Error al conectar a MongoDB:', error.message)

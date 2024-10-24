@@ -40,6 +40,25 @@ const searchedImage = async (folder, image) => {
     })
 }
 
+const getImage = async (req, res) => {
+    const folder = req.params.folder
+    const image = req.params.image
+
+    if (!folder || !image) return res.json({ error: 'No se especificó la carpeta o la imagen' })
+
+    try {
+        const imageDoc = fs.readFileSync(path.join(__dirname, `../data/${folder}/${image}`))
+        if (!imageDoc) return res.status(404).json({ error: 'Imagen no encontrada' })
+    
+        res.set('Content-Type', 'image/png')
+        res.send(imageDoc)
+    }
+    catch (error) {
+        console.error('Error al obtener la imagen:', error);
+        res.status(500).send('Error en el servidor');
+    }
+}
+
 module.exports = {
     random: async (req, res) => {
         let { folder, subfolder } = req.query
@@ -58,5 +77,6 @@ module.exports = {
         let file = await searchedImage(folder, image)
     
         return res.json(file)
-    }
+    },
+    getImage,
 }

@@ -55,4 +55,6 @@ app.use('/api/guild', require('./routes/guild.routes'))
 app.use('/api/image', require('./routes/image.routes'))
 app.use('/api/pokemon', require('./routes/pokemon.routes'))
 
+app.use('/api/pokemon-habitat', require('./routes/pokemonHabitat'))
+
 module.exports = app
