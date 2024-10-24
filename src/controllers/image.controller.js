@@ -52,24 +52,24 @@ const getImage = async (req, res) => {
     
         const imageDoc = fs.readFileSync(imagePath)
         const ext = path.extname(image).toLowerCase();
-        let contentType;
+        let contentType
         switch (ext) {
             case '.png':
-                contentType = 'image/png';
-                break;
+                contentType = 'image/png'
+                break
             case '.jpg':
             case '.jpeg':
-                contentType = 'image/jpeg';
-                break;
+                contentType = 'image/jpeg'
+                break
             case '.gif':
-                contentType = 'image/gif';
-                break;
+                contentType = 'image/gif'
+                break
             case '.bmp':
-                contentType = 'image/bmp';
-                break;
+                contentType = 'image/bmp'
+                break
             case '.svg':
-                contentType = 'image/svg+xml';
-                break;
+                contentType = 'image/svg+xml'
+                break
             default:
                 return res.status(415).json({ error: 'Tipo de imagen no soportado' });
         }

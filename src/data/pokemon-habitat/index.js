@@ -1,8 +1,3 @@
-const fs = require('fs')
-const path = require('path')
-
-const images = fs.readdirSync(path.join(__dirname, './images'))
-
 module.exports = [
     {
         "name": "Pradera",
@@ -41,12 +36,6 @@ module.exports = [
         "description": "Todos los Pokémon son Pokémon legendarios (excepto Unown), por lo que son muy raramente vistos."
     }
 ].map(e => {
-    // if (images.includes(`${e.name}.gif`)) {
-    //     e.image = {
-    //         data: fs.readFileSync(path.join(__dirname, `./images/${e.name}.gif`)),
-    //         contentType: 'gif',
-    //     }
-    // }
-    e.image = `${process.env.SITE_URL}/api/image/pokemon-habitat/${e}.gif`
+    e.image = `${process.env.SITE_URL}/upload/pokemon-habitat/${e.name}.gif`
     return e
 })

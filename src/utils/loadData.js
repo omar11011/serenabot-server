@@ -10,22 +10,22 @@ const pokemonHabitat = require('../data/pokemon-habitat')
 
 module.exports = async () => {
     // Naturaleza
-    // await PokemonNature.deleteMany({})
-    // await PokemonNature.insertMany(pokemonNature)
-    // console.log('Naturalezas actualizadas.')
+    await PokemonNature.deleteMany({})
+    await PokemonNature.insertMany(pokemonNature)
+    console.log('Naturalezas actualizadas.')
 
     // // Grupo Huevo
-    // await PokemonEggGroup.deleteMany({})
-    // await PokemonEggGroup.insertMany(pokemonEggGroup)
-    // console.log('Grupos Huevo actualizados.')
+    await PokemonEggGroup.deleteMany({})
+    await PokemonEggGroup.insertMany(pokemonEggGroup)
+    console.log('Grupos Huevo actualizados.')
 
-    // // Crecimiento
-    // await PokemonGrowth.deleteMany({})
-    // await PokemonGrowth.insertMany(pokemonGrowth)
-    // console.log('Crecimientos actualizados.')
+    // Crecimiento
+    await PokemonGrowth.deleteMany({})
+    await PokemonGrowth.insertMany(pokemonGrowth)
+    console.log('Crecimientos actualizados.')
 
     // Habitat
-    // await PokemonHabitat.deleteMany({})
-    // await PokemonHabitat.insertMany(pokemonHabitat)
-    // console.log('Habitats actualizados')
+    await PokemonHabitat.deleteMany({})
+    await PokemonHabitat.insertMany(pokemonHabitat)
+    console.log('Habitats actualizados')
 }
