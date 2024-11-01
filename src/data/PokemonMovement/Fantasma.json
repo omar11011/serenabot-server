@@ -1,0 +1,285 @@
+[
+    {
+        "name": "Lengüetazo",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 30
+    },      
+    {
+        "name": "Rayo Confuso",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 50,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },      
+    {
+        "name": "Tinieblas",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 80
+    },      
+    {
+        "name": "Bola Sombra",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 80,
+        "precision": 100
+    },      
+    {
+        "name": "Maldición",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "attack",
+                "points": -1
+            },
+            {
+                "toUser": false,
+                "stat": "attack",
+                "points": 1
+            }
+        ]
+    },     
+    {
+        "name": "Mismo Destino",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": -1
+            },
+            {
+                "toUser": false,
+                "stat": "defense",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Pesadilla",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -2
+            }
+        ]
+    },      
+    {
+        "name": "Rencor",
+        "class": "Especial",
+        "type": "Fantasma"
+    },      
+    {
+        "name": "Impresionar",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 30,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Puño Sombra",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 75,
+        "precision": 100
+    },     
+    {
+        "name": "Rabia",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 20,
+        "hits": 2
+    },       
+    {
+        "name": "Golpe Fantasma",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 70,
+        "precision": 100
+    },      
+    {
+        "name": "Halloween",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Infortunio",
+        "class": "Especial",
+        "power": 65,
+        "type": "Fantasma"
+    },      
+    {
+        "name": "Garra Umbría",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 65,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": 1,
+                "probability": 30
+            }
+        ]
+    },
+    {
+        "name": "Golpe Umbrío",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 90,
+        "precision": 100
+    },     
+    {
+        "name": "Sombra Vil",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 60
+    },             
+    {
+        "name": "Viento Aciago",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },   
+    {
+        "name": "Gigaaparición",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 200
+    },         
+    {
+        "name": "Marcha Espectral",
+        "class": "Estado",
+        "type": "Fantasma",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Maxiespectro",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 200
+    },      
+    {
+        "name": "Orbes Espectro",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 80
+    },   
+    {
+        "name": "Poltergeist",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 110
+    },
+    {
+        "name": "Rencor Reprimido",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 70
+    },            
+    {
+        "name": "Hueso Sombrío",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 50,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "defenes",
+                "points": -1,
+                "probability": 70
+            }
+        ]
+    },         
+    {
+        "name": "Puntada Sombría",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 70,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },     
+    {
+        "name": "Rayo Umbrío",
+        "class": "Especial",
+        "type": "Fantasma",
+        "power": 100
+    },      
+    {
+        "name": "Robasombra",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 80,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "spattack",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Homenaje Póstumo",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 50,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            }
+        ]
+    },     
+    {
+        "name": "Puño Furia",
+        "class": "Físico",
+        "type": "Fantasma",
+        "power": 60
+    }
+]

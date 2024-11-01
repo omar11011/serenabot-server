@@ -1,0 +1,303 @@
+[
+    {
+        "name": "Beso Dulce",
+        "class": "Estado",
+        "type": "Hada"
+    },
+    {
+        "name": "Encanto",
+        "class": "Estado",
+        "type": "Hada"
+    },
+    {
+        "name": "Luz Lunar",
+        "class": "Estado",
+        "type": "Hada"
+    },
+    {
+        "name": "Beso Drenaje",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 50
+    },
+    {
+        "name": "Brillo Mágico",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 80
+    },
+    {
+        "name": "Campo de Niebla",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "precision",
+            "points": -30
+          }
+        ]
+    },    
+    {
+        "name": "Carantoña",
+        "class": "Físico",
+        "type": "Hada",
+        "power": 90,
+        "precision": 90
+    },
+    {
+        "name": "Cerrojo Feérico",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "stat": "defense",
+            "toUser": true,
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Defensa Floral",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "stat": "spdefense",
+            "toUser": true,
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Fuerza Lunar",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 95
+    },
+    {
+        "name": "Geocontrol",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "stat": "attack",
+            "toUser": true,
+            "points": 1
+          },
+          {
+            "stat": "spattack",
+            "toUser": true,
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Luz Aniquiladora",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 120
+    },    
+    {
+        "name": "Niebla Aromática",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": true,
+            "stat": "spdefense",
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Ojitos Tiernos",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "attack",
+            "points": -1
+          }
+        ]
+    },
+    {
+        "name": "Truco Defensa",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": true,
+            "stat": "defense",
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Viento Feérico",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 55
+    },
+    {
+        "name": "Voz Cautivadora",
+        "class": "Especial",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "spdefense",
+            "points": -1
+          }
+        ]
+    },
+    {
+        "name": "Cañón Floral",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 120,
+        "precision": 75,
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "spdefense",
+            "points": -2,
+            "probability": 30
+          }
+        ]
+    },     
+    {
+        "name": "Cura Flora",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": true,
+            "stat": "spdefense",
+            "points": 1
+          },
+          {
+            "toUser": true,
+            "stat": "speed",
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Furia Natural",
+        "class": "Físico",
+        "type": "Hada",
+        "power": 90
+    },
+    {
+        "name": "Sylveotornado",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 110,
+        "precision": 85
+    },
+    {
+        "name": "Bruma Explosiva",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 80,
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "attack",
+            "points": -1
+          }
+        ]
+    },
+    {
+        "name": "Cautivapor",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": true,
+            "stat": "spdefense",
+            "points": 1
+          }
+        ]
+    },    
+    {
+        "name": "Choque Anímico",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 80
+    },
+    {
+        "name": "Ciclón Primavera",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 75,
+        "precision": 90,
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "speed",
+            "points": -1
+          }
+        ]
+    },
+    {
+        "name": "Decoración",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": true,
+            "stat": "attack",
+            "points": 1
+          }
+        ]
+    },
+    {
+        "name": "Gigacastigo",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 150,
+        "precision": 90
+    },
+    {
+        "name": "Gigacolofón",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 130,
+        "precision": 85
+    },
+    {
+        "name": "Maxiestela",
+        "class": "Especial",
+        "type": "Hada",
+        "power": 110,
+        "precision": 90
+    },
+    {
+        "name": "Canto Encantador",
+        "class": "Estado",
+        "type": "Hada",
+        "effects": [
+          {
+            "toUser": false,
+            "stat": "attack",
+            "points": -1,
+            "probability": 50
+          },
+          {
+            "toUser": true,
+            "stat": "spattack",
+            "points": 1,
+            "probability": 50
+          }
+        ]
+    },
+    {
+        "name": "Feerichoque",
+        "class": "Físico",
+        "type": "Hada",
+        "power": 70
+    }        
+]

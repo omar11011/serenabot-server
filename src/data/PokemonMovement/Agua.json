@@ -1,0 +1,405 @@
+[
+    {
+        "name": "Burbuja",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 40,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },      
+    {
+        "name": "Cascada",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 80,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "priority",
+                "points": 1,
+                "probability": 20
+            }
+        ]
+    },    
+    {
+        "name": "Hidrobomba",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 110,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "accuracy",
+                "points": -1,
+                "probability": 20
+            }
+        ]
+    },    
+    {
+        "name": "Martillazo",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 70
+    },
+    {
+        "name": "Pistola Agua",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 40
+    },
+    {
+        "name": "Rayo Burbuja",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 70,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },      
+    {
+        "name": "Refugio",
+        "class": "Estado",
+        "type": "Agua",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    },   
+    {
+        "name": "Surf",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 90
+    },    
+    {
+        "name": "Tenaza",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 50
+    },          
+    {
+        "name": "Danza Lluvia",
+        "class": "Estado",
+        "type": "Agua"
+    },                
+    {
+        "name": "Pulpocañón",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 110
+    },        
+    {
+        "name": "Torbellino",
+        "class": "Estado",
+        "type": "Agua",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },       
+    {
+        "name": "Agua Lodosa",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 65,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "accuracy",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },   
+    {
+        "name": "Buceo",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 80
+    },     
+    {
+        "name": "Hidrocañón",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 150
+    },          
+    {
+        "name": "Hidrochorro",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 110
+    },     
+    {
+        "name": "Hidropulso",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 60,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },      
+    {
+        "name": "Salpicar",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 40
+    },
+    {
+        "name": "Acua Aro",
+        "class": "Estado",
+        "type": "Agua",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            }
+        ]
+    },
+    {
+        "name": "Acua Cola",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 40
+    },    
+    {
+        "name": "Acua Jet",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 40,
+        "priority": 1
+    },       
+    {
+        "name": "Salmuera",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 80
+    },     
+    {
+        "name": "Concha Filo",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 50
+    },   
+    {
+        "name": "Empapar",
+        "class": "Estado",
+        "type": "Agua",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },     
+    {
+        "name": "Escaldar",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 80
+    },    
+    {
+        "name": "Voto Agua",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 60
+    },    
+    {
+        "name": "Chorro de Vapor",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 130
+    },              
+    {
+        "name": "Pulso Primigenio",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 85
+    },      
+    {
+        "name": "Shuriken de Agua",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 55,
+        "hits": 2
+    },    
+    {
+        "name": "Aria Burbuja",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 55
+    },             
+    {
+        "name": "Hidroariete",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 110
+    },         
+    {
+        "name": "Salpikasurf",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 100
+    },    
+    {
+        "name": "Vapodrenaje",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 75,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Azote Torrencial",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 70
+    },    
+    {
+        "name": "Branquibocado",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 85
+    },        
+    {
+        "name": "Disparo Certero",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 120
+    },        
+    {
+        "name": "Envite Acuático",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 100
+    },  
+    {
+        "name": "Gigacañonazo",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 130
+    },    
+    {
+        "name": "Gigadisparo",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 140
+    },   
+    {
+        "name": "Gigaespuma",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 100
+    },    
+    {
+        "name": "Gigagolpe Fluido",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 150
+    },   
+    {
+        "name": "Gigatrampa Rocas",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 150
+    },        
+    {
+        "name": "Gota Vital",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 40,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    },     
+    {
+        "name": "Maxichorro",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 150
+    },    
+    {
+        "name": "Viraje",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 50,
+        "priority": 1
+    },
+    {
+        "name": "Agua Fria",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 60
+    },     
+    {
+        "name": "Danza Acuática",
+        "class": "Estado",
+        "type": "Agua",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },     
+    {
+        "name": "Hidrovapor",
+        "class": "Especial",
+        "type": "Agua",
+        "power": 70
+    },       
+    {
+        "name": "Puño Jet",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 40,
+        "priority": 1
+    },   
+    {
+        "name": "Tajo Acuático",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 70
+    },
+    {
+        "name": "Triple Inmersión",
+        "class": "Físico",
+        "type": "Agua",
+        "power": 20,
+        "hits": 3
+    }                                     
+]

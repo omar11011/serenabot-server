@@ -1,0 +1,286 @@
+[
+    {
+        "name": "Chupavidas",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 20,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    },     
+    {
+        "name": "Disparo Demora",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 60
+    },    
+    {
+        "name": "Doble Ataque",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 30,
+        "hits": 2
+    },       
+    {
+        "name": "Pin Misil",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 25,
+        "hits": 5
+    },
+    {
+        "name": "Corte Furia",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 15,
+        "hits": 2
+    },      
+    {
+        "name": "Megacuerno",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 130
+    },      
+    {
+        "name": "Telaraña",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },
+    {
+        "name": "Luminicola",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 70
+    },      
+    {
+        "name": "Rayo Señal",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 120
+    },      
+    {
+        "name": "Viento Plata",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 60,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "A Defender",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Al Ataque",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "attack",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Auxilio",
+        "class": "Estado",
+        "type": "Bicho"
+    },      
+    {
+        "name": "Ada y Vuelta",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 70,
+        "hits": 2
+    }, 
+    {
+        "name": "Picadura",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 40
+    },      
+    {
+        "name": "Tijera X",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 80,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "defense",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },     
+    {
+        "name": "Zumbido",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 90
+    },      
+    {
+        "name": "Danza Aleteo",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },  
+    {
+        "name": "Estoicismo",
+        "class": "Especial",
+        "power": 50,
+        "type": "Bicho"
+    },      
+    {
+        "name": "Polvo Ira",
+        "class": "Estado",
+        "type": "Bicho"
+    },      
+    {
+        "name": "Rodillo de Púas",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 30,
+        "hits": 2
+    },      
+    {
+        "name": "Acoso",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },     
+    {
+        "name": "Aguijón Letal",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 40,
+        "precision": 100
+    },  
+    {
+        "name": "Polvo Explosivo",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 60
+    },      
+    {
+        "name": "Red Viscosa",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Bola de Polen",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 90,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -1
+            }
+        ]
+    },  
+    {
+        "name": "Escaramuza",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 25,
+        "precision": 100,
+        "hits": 2
+    },      
+    {
+        "name": "Plancha",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 60
+    },      
+    {
+        "name": "Gigaestupor",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 200
+    },      
+    {
+        "name": "Golpe Rastrero",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 50,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },    
+    {
+        "name": "Maxinsecto",
+        "class": "Especial",
+        "type": "Bicho",
+        "power": 150
+    },      
+    {
+        "name": "Brinco",
+        "class": "Físico",
+        "type": "Bicho",
+        "power": 30,
+        "precision": 100,
+        "hits": 2
+    },      
+    {
+        "name": "Telatrampa",
+        "class": "Estado",
+        "type": "Bicho",
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    }      
+]

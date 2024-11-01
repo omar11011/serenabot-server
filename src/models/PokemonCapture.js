@@ -1,18 +1,12 @@
 const { Schema, model } = require('mongoose')
 
 const pokemonCaptureSchema = new Schema({
-    pokemon: {
-        type: String,
-        required: true,
-    },
-    owner: {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-    },
+    pokemon: { type: Schema.Types.ObjectId, ref: 'PokemonForm' },
+    owner: { type: Schema.Types.ObjectId, ref: 'User' },
     traits: {
         nickname: { type: String, default: null },
         gender: { type: String, default: null },
-        nature: { type: String, default: null },
+        nature: { type: Schema.Types.ObjectId, ref: 'PokemonNature' },
     },
     status: {
         xp: { type: Number, default: 0 },
@@ -48,16 +42,9 @@ const pokemonCaptureSchema = new Schema({
         isFavorite: { type: Boolean, default: false },
     },
     movements: {
-        type: [
-            {
-                _id: false,
-                name: { type: String, default: null },
-                xp: { type: Number, default: 0 },
-                level: { type: Number, default: 1 },
-                type: { type: String, default: 'nivel' },
-            },
-        ],
-        default: [],
+        byLevel: { type: [ String ], default: [] },
+        byMachine: { type: [ String ], default: [] },
+        byTutor: { type: [ String ], default: [] },
     },
 }, {
     timestamps: true

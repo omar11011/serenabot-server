@@ -1,9 +1,10 @@
 const { Schema, model } = require('mongoose')
 
 const PokemonHabitat = new Schema({
+    key: String,
     name: String,
     description: String,
-    image: String,
+    emoji: String,
 }, {
     timestamps: true,
 })

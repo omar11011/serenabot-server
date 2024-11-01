@@ -1,0 +1,285 @@
+[
+    {
+        "name": "Furia Dragón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 120,
+        "hits": 2
+    },      
+    {
+        "name": "Ciclón",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 60,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Dragoaliento",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 90
+    },      
+    {
+        "name": "Enfado",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 120,
+        "hits": 2
+    },      
+    {
+        "name": "Danza Dragón",
+        "class": "Estado",
+        "type": "Dragón",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "attack",
+                "points": 1
+            },
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Garra Dragón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 75
+    },      
+    {
+        "name": "Carga Dragón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 60,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },      
+    {
+        "name": "Cometa Draco",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 130,
+        "hits": 2
+    },      
+    {
+        "name": "Corte Vacio",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 60,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -1
+            }
+        ]
+    },    
+    {
+        "name": "Distorsión",
+        "class": "Estado",
+        "type": "Dragón",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },        
+    {
+        "name": "Pulso Dragón",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 85
+    },      
+    {
+        "name": "Cola Dragón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 90,
+        "hits": 2
+    },      
+    {
+        "name": "Golpe Bis",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 70,
+        "hits": 2
+    },  
+    {
+        "name": "Estruendo Implacable",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 140,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "attack",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Fragor Escamas",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 90
+    },      
+    {
+        "name": "Martillo Dragón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 130
+    },      
+    {
+        "name": "Núcleo Castigo",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 100,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },      
+    {
+        "name": "Cañón Dinamax",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 200
+    },      
+    {
+        "name": "Dragoenergía",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 75,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Dracoflechas",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 90
+    },      
+    {
+        "name": "Estruendo Escama",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 150,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "attack",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },      
+    {
+        "name": "Gigadesgaste",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 130
+    },      
+    {
+        "name": "Maxidraco",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 250
+    },      
+    {
+        "name": "Ráfaga Escamas",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 75,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Rayo Infinito",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 110
+    },      
+    {
+        "name": "Vasto Impacto",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 150
+    },      
+    {
+        "name": "Asalto Espadón",
+        "class": "Físico",
+        "type": "Dragón",
+        "power": 130,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "defense",
+                "points": -1
+            }
+        ]
+    },      
+    {
+        "name": "Bramido Dragón",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 60
+    },      
+    {
+        "name": "Láser Veleidoso",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 80,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -2,
+                "probability": 30
+            }
+        ]
+    },      
+    {
+        "name": "Oído Cocina",
+        "class": "Especial",
+        "type": "Dragón",
+        "power": 100,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1
+            }
+        ]
+    }      
+]

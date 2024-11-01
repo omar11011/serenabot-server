@@ -1,0 +1,337 @@
+[
+    {
+        "name": "Ala de acero",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 70,
+        "precision": 90
+    },
+    {
+        "name": "Cola Férrea",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 65,
+        "precision": 100
+    },
+    {
+        "name": "Garra Metal",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 50,
+        "precision": 100
+    },
+    {
+        "name": "Defensa Férrea",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            }
+        ]
+    },
+    {
+        "name": "Deseo Oculto",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 70,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "hp",
+                "points": 1,
+                "probability": 30
+            }
+        ]
+    },
+    {
+        "name": "Eco Metálico",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 40,
+        "precision": 100
+    },      
+    {
+        "name": "Bomba Imán",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 60,
+        "precision": 100
+    },    
+    {
+        "name": "Cabeza de Hierro",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 70,
+        "precision": 100,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "defense",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },     
+    {
+        "name": "Disparo Espejo",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 70,
+        "precision": 100
+    },            
+    {
+        "name": "Foco Resplandor",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 80,
+        "precision": 100,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "spdefense",
+                "points": -1,
+                "probability": 20
+            }
+        ]
+    },       
+    {
+        "name": "Giro Bala",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 80,
+        "precision": 90
+    },      
+    {
+        "name": "Puño Bala",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 75,
+        "precision": 100
+    },   
+    {
+        "name": "Represión Metal",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 50,
+        "precision": 100
+    },     
+    {
+        "name": "Aligerar",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },          
+    {
+        "name": "Cambio de Marcha",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 1
+            }
+        ]
+    },      
+    {
+        "name": "Cuerpo Pesado",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 100,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "speed",
+                "points": -1,
+                "probability": 30
+            }
+        ]
+    },      
+    {
+        "name": "Rueda Doble",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 60,
+        "precision": 100,
+        "hits": 2
+    },      
+    {
+        "name": "Escudo Real",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            },
+            {
+                "toUser": true,
+                "stat": "spdefense",
+                "points": 1
+            }
+        ]
+    },    
+    {
+        "name": "Anclaje",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "defense",
+                "points": 1
+            },
+            {
+                "toUser": true,
+                "stat": "spdefense",
+                "points": 1
+            }
+        ]
+    },    
+    {
+        "name": "Cuerno Certero",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 120,
+        "precision": 100
+    },    
+    {
+        "name": "Ferropuño Doble",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 100,
+        "hits": 2
+    },  
+    {
+        "name": "Meteorimpacto",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 100
+    },     
+    {
+        "name": "Piñón Auxiliar",
+        "class": "Estado",
+        "type": "Acero",
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "speed",
+                "points": 2
+            }
+        ]
+    },       
+    {
+        "name": "Allanador Ferro",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 75,
+        "precision": 100
+    },
+    {
+        "name": "Embate Supremo",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 100
+    },
+    {
+        "name": "Gigafundido",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 150
+    },   
+    {
+        "name": "Gigatrampa Acero",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 160
+    },           
+    {
+        "name": "Maximetal",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 130
+    },
+    {
+        "name": "Metaláser",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 120,
+        "precision": 100,
+        "effects": [
+            {
+                "toUser": true,
+                "stat": "spattack",
+                "points": -2
+            }
+        ]
+    },    
+    {
+        "name": "Retracción",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 40
+    },       
+    {
+        "name": "Tajo Supremo",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 50
+    },
+    {
+        "name": "Fiebre Forada",
+        "class": "Especial",
+        "type": "Acero",
+        "power": 80
+    },
+    {
+        "name": "Martillo Colosal",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 130,
+        "precision": 100
+    },
+    {
+        "name": "Prensa Metálica",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 100,
+        "precision": 100,
+        "effects": [
+            {
+                "toUser": false,
+                "stat": "defense",
+                "points": -1,
+                "probability": 50
+            }
+        ]
+    },     
+    {
+        "name": "Quemarrueda",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 60,
+        "precision": 100
+    },     
+    {
+        "name": "Tajo Taquión",
+        "class": "Físico",
+        "type": "Acero",
+        "power": 80,
+        "precision": 100
+    }                                           
+]

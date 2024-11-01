@@ -1,9 +1,9 @@
 const { Schema, model } = require('mongoose')
 
 const PokemonRegion = new Schema({
+    key: String,
     name: String,
     description: String,
-    image: String,
 }, {
     timestamps: true,
 })

@@ -53,8 +53,13 @@ app.use('/dashboard', require('./routes/dashboard.routes'))
 app.use('/api/user', require('./routes/user.routes'))
 app.use('/api/guild', require('./routes/guild.routes'))
 app.use('/api/image', require('./routes/image.routes'))
-app.use('/api/pokemon-capture', require('./routes/pokemon.routes'))
 
+app.use('/api/gif', require('./routes/gif'))
+app.use('/api/pokemon-nature', require('./routes/pokemonNature'))
+app.use('/api/pokemon-type', require('./routes/pokemonType'))
 app.use('/api/pokemon-habitat', require('./routes/pokemonHabitat'))
+app.use('/api/pokemon-movement', require('./routes/pokemonMovement'))
+app.use('/api/pokemon-form', require('./routes/pokemonForm'))
+app.use('/api/pokemon-capture', require('./routes/pokemonCapture'))
 
 module.exports = app

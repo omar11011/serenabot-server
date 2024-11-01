@@ -1,5 +1,3 @@
-const Schema = require('./schema')
-
 module.exports = [
     "Parabólico",
     "Normal",
@@ -7,4 +5,4 @@ module.exports = [
     "Lento",
     "Fluctuante",
     "Errático",
-].map(e => new Schema(e))
+].map(e => ({ name: e }))
