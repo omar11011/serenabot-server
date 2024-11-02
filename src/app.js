@@ -61,5 +61,6 @@ app.use('/api/pokemon-habitat', require('./routes/pokemonHabitat'))
 app.use('/api/pokemon-movement', require('./routes/pokemonMovement'))
 app.use('/api/pokemon-form', require('./routes/pokemonForm'))
 app.use('/api/pokemon-capture', require('./routes/pokemonCapture'))
+app.use('/api/trade', require('./routes/trade'))
 
 module.exports = app

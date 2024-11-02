@@ -98,13 +98,13 @@ const getCaptures = async (req, res) => {
         if (limit < 1) limit = 20
         let skip = (page - 1) * limit
 
-        let ids = await PokemonCapture.find({}).select('_id').sort({ _id: query.latest ? -1 : 1 }).lean()
+        let ids = await PokemonCapture.find({ owner: params.user }).select('_id').lean()
         ids = ids.map(e => e._id.toString())
 
         let data = await PokemonCapture.find(obj).lean().populate({
             path: 'pokemon',
             select: 'name',
-        }).select('status features')
+        }).select('status features').sort({ _id: query.latest ? -1 : 1 })
         let count = data.length
         data = data.slice(skip, page * limit).map(e => {
             let index = ids.indexOf(e._id.toString())
@@ -147,8 +147,12 @@ const updatePokemon = async (req, res) => {
     let { _id, set = {}, inc = {} } = req.body
     if (!_id) return res.status(400).json({ error: 'No se especificó el Pokémon' })
 
+    let criteria = null
+    if (Array.isArray(_id)) criteria = { _id: { $in: _id } }
+    else criteria = { _id }
+
     let pokemonWanted = await PokemonCapture.findOneAndUpdate(
-        { _id },
+        criteria,
         { 
             $set: set, 
             $inc: inc 
